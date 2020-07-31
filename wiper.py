@@ -74,7 +74,7 @@ def wipe_files(CURRENT_DIR, display_message=True):
                     print('\n' + '=' * 35 + '\n')
             else:
                 if display_message:
-                    print(f'[CLEANED] {current_dir}')
+                    print(f'[WIPED] {current_dir}')
 
     # call the error handler
     error_handler(errors)
